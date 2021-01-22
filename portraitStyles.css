@@ -236,14 +236,14 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 15vh;
-    width: 15vw;
+    height: 12.5vw;
+    width: 12.5vw;
 }
 
 .networkLogo:hover {
-    height: 17.5vh;
-    transition: 0.1s;
-    width: 17.5vw;
+    height: 15vw;
+    transition: 0.15s;
+    width: 15vw;
 }
 
 .contactMeHeader {
