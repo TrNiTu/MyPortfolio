@@ -1,0 +1,281 @@
+/* Master Styles */
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+/* Navigation Styles */
+
+.topBarNavigation {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    height: 32px;
+    justify-content: space-between;
+}
+
+.navigationText {
+    border-bottom: 1px solid transparent;
+    margin-left: 5px;
+    transition: border-bottom 0.25s;
+}
+
+.navigationText a {
+    color: #505050;
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+.navigationText:hover {
+    border-bottom: 1px solid black;
+}
+
+.navigationText a:hover {
+    color: black;
+}
+
+.activeNavigationText {
+    border-bottom: 1px solid black;
+}
+
+.activeNavigationText a {
+    color: black !important;
+}
+
+.leftColumn {
+    display: flex;
+}
+
+.brand {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.brandName::selection {
+    color: #ad4444;
+}
+
+.homeIcon {
+    height: 32px;
+    width: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Images Container */
+
+.imagesContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.imageContainer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.imageBackground {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(15%);
+    height: 100vh;
+    width: 100%;
+}
+
+.homeLogoTextWrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    height: 100%;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: absolute;
+    text-align: center;
+}
+
+.logoContainer img {
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.logoContainer:hover img {
+    transition: 0.25s;
+    width: 60%;
+}
+
+.subtitle {
+    color: white;
+    font-size: 40;
+    text-decoration: none;
+}
+
+.subtitle a {
+    color: white;
+    font-size: 40;
+    text-decoration: none;
+}
+
+/* JavaScript Transitions */
+
+.lightenImage {
+    filter: brightness(50%);
+    transition: 0.5s;
+}
+
+.enlargeLogo {
+    size: 110%;
+    transition: 0.25s;
+}
+
+.enlargeInfoBubble {
+    size: 110%;
+    transition: 0.25s;
+}
+
+/* My Work Page Styles */
+
+.backgroundImageContainer {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.backgroundShapeContainer {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-bottom: 0px solid transparent;
+    border-color: white;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-style: solid;
+    border-top: 10px solid white;
+    bottom: 0;
+    height: 65vh;
+    position: absolute;
+    width: 100%;
+}
+
+.infoBubblesContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.infoBubbles {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.infoBubble {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-bottom: 50%;
+    width: 300px;
+}
+
+.infoBubbleHeader {
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    font-size: 30px;
+    justify-content: center;
+    padding-top: 105%;
+}
+
+.infoBubbleSubtitle {
+    display: flex;
+    font-weight: 400;
+    font-size: 1vw;
+    justify-content: center;
+    margin-top: 5%;
+    text-align: center;
+}
+
+ ul {
+     display: grid;
+     font-size: 1vw;
+     grid-column-gap: 2vw;
+     grid-template-columns: 1fr 1fr;
+     justify-content: center;
+}
+
+.myWorkListNav {
+    border-bottom: 1px solid transparent;
+    color: #505050;
+    text-decoration: none;
+    transition: border-bottom 0.25s;
+}
+
+.myWorkListNav:hover {
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+/* Contact Me Styles */
+
+.networkContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.networkLogos {
+    position: relative;
+}
+
+.networkLogo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 125px;
+    width: 125px;
+}
+
+.networkLogo:hover {
+    height: 150px;
+    transition: 0.15s;
+    width: 150px;
+}
+
+.logoWrapper {
+    display: flex;
+}
+
+.contactMeHeader {
+    display: flex;
+    color: black;
+    font-size: 72px;
+    font-weight: 600;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+.contactMeSubtitle {
+    align-items: center;
+    display: flex;
+    font-weight: 400;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 200%;
+    opacity: 0.8;
+    padding-top: 1.5%;
+    text-align: center;
+}

@@ -1,0 +1,7 @@
+#1 Rid of ".html" in links
+#2 Info bubble text (add to both aboutme and )
+#4 Mobile layout
+#5 Network logos adjusted to bottom
+#6 Make experience links
+#7 Add an email message on the contactme page
+#8 Make scrollbars always visible on portrait styles

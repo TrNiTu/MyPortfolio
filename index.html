@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Trey Turner" />
+    <meta name="description" content="Trey Turner's portfolio website made using HTML5, CSS3, and JavaScript" />
+    <meta name="keywords"
+        content="UNL, Trey Turner, CSS, CSS3, HTML, HTML5, JavaScript, Trey Turner Portfolio, Portfolio, Web Development, Coding, Programming" />
+    <title>Trey's Portfolio | Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="only screen and (orientation: landscape)" href="landscapeStyles.css">
+    <link rel="stylesheet" media="only screen and (orientation: portrait)" href="portraitStyles.css">
+
+
+
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="topBarNavigation">
+
+            <div class="leftColumn">
+                <div class="navigationText activeNavigationText">
+                    <a href="index.html">HOME</a>
+                </div>
+            </div>
+
+            <div class="rightColumn">
+                <div class="brand">
+                    <p class="brandName">TREY TURNER</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contentContainer">
+            <div class="imagesContainer">
+
+                <!-- About Me -->
+                <div class="imageContainer">
+                    <!-- Background Image -->
+                    <div class="imageBackground" style="background-image: url(assets/images/main/AboutMe.jpg)"></div>
+
+                    <!-- Image Logo -->
+                    <div class="homeLogoTextWrapper">
+                        <div class="logoContainer">
+                            <a href="aboutme.html"><img src="assets/images/Main/Icons/AboutMe.png"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- My Work -->
+                <div class="imageContainer">
+                    <!-- Background Image -->
+                    <div class="imageBackground" style="background-image: url(assets/images/main/MyWork.jpg)"></div>
+
+                    <!-- Image Logo -->
+                    <div class="homeLogoTextWrapper">
+                        <div class="logoContainer">
+                            <a href="mywork.html"><img src="assets/images/Main/Icons/MyWork.png"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Me -->
+                <div class="imageContainer">
+                    <!-- Background Image -->
+                    <div class="imageBackground" style="background-image: url(assets/images/main/ContactMe.jpg)"></div>
+
+                    <!-- Image Logo -->
+                    <div class="homeLogoTextWrapper">
+                        <div class="logoContainer">
+                            <a href="contactme.html"><img src="assets/images/Main/Icons/ContactMe.png"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- imagesContainer -->
+        </div> <!-- contentContainer -->
+
+    </div>
+    </div> <!-- mainContainer -->
+</body>
+<script>
+    const portfolioImages = document.querySelectorAll('.imageContainer')
+
+    portfolioImages.forEach(portfolioImage => {
+        portfolioImage.addEventListener('mouseover', () => {
+            portfolioImage.childNodes[3].classList.add('lightenImage')
+        })
+    })
+
+    portfolioImages.forEach(portfolioImage => {
+        portfolioImage.addEventListener('mouseout', () => {
+            portfolioImage.childNodes[3].classList.remove('lightenImage')
+        })
+    })
+</script>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Trey's Portfolio | Contact</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="only screen and (orientation: landscape)" href="landscapeStyles.css">
+    <link rel="stylesheet" media="only screen and (orientation: portrait)" href="portraitStyles.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="topBarNavigation">
+
+            <div class="leftColumn">
+                <div class="navigationText">
+                    <a href="index.html">HOME</a>
+                </div>
+            </div>
+
+            <div class="rightColumn">
+                <div class="brand">
+                    <div class="brandName">TREY TURNER</div>
+                </div>
+            </div>
+        </div> <!-- topBarNavigation -->
+
+        <div class="contentContainer">
+
+            <div class="backgroundImageContainer">
+                <div class="imageBackground"
+                    style="background-image: url(assets/images/contactme/Background.jpg); filter: brightness(100%);">
+                    <div class="backgroundShapeContainer">
+
+                        <div class="contactMeHeader">
+                            Contact Me
+                        </div>
+
+                        <div class="contactMeSubtitle">
+                            Here you will find links to my different social network platforms
+                            <br>
+                            If you have any questions or regards, don't hesitate to contact me at one of the links
+                            provided
+                            below!
+                        </div>
+
+
+
+                        <div class="networkContainer">
+                            <!-- Email -->
+                            <div class="networkLogos">
+                                <a href="mailto:tturner@huskers.unl.edu" target="_blank">
+                                    <div class="networkLogo"
+                                        style="background-image: url(assets/images/contactme/icons/Gmail.png)">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Facebook -->
+                            <div class="networkLogos">
+                                <a href="https://www.facebook.com/trnitu" target="_blank">
+                                    <div class="networkLogo"
+                                        style="background-image: url(assets/images/contactme/icons/Facebook.png);">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Github -->
+                            <div class="networkLogos">
+                                <a href="https://www.github.com/trnitu" target="_blank">
+                                    <div class="networkLogo"
+                                        style="background-image: url(assets/images/contactme/icons/Github.png)">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Instagram -->
+                            <div class="networkLogos">
+                                <a href="https://www.instagram.com/trey.nt" target="_blank">
+                                    <div class="networkLogo"
+                                        style="background-image: url(assets/images/contactme/icons/Instagram.png)">
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <!-- LinkedIn -->
+                            <div class="networkLogos">
+                                <a href="https://www.linkedin.com/in/trnitu" target="_blank">
+                                    <div class="networkLogo"
+                                        style="background-image: url(assets/images/contactme/icons/LinkedIn.png)"></div>
+                                </a>
+                            </div>
+
+                            <!-- Twitter -->
+                            <div class="networkLogos">
+                                <a href="https://www.twitter.com/trnitu" target="_blank">
+                                    <div class="networkLogo"
+                                        style="background-image: url(assets/images/contactme/icons/Twitter.png)"></div>
+                                </a>
+                            </div>
+
+                        </div> <!-- networkContainer -->
+                    </div>
+
+                </div>
+                <!--backgroundShapeContainer-->
+            </div> <!-- backgroundImageContainer -->
+        </div> <!-- contentContainer -->
+    </div> <!-- mainContainer -->
+</body>
+<script>
+    const logos = document.querySelectorAll('.networkLogos')
+
+    logos.forEach(logo => {
+        logo.addEventListener('mouseover', () => {
+            logo.childNodes[1].classList.add('enlargeLogo')
+        })
+    })
+
+    logos.forEach(logo => {
+        logo.addEventListener('mouseout', () => {
+            logo.childNodes[1].classList.remove('enlargeLogo')
+        })
+    })
+</script>
+
+</html>
